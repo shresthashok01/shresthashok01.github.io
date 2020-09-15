@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COVID19 Nepal</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-leaflet@1.1.0/dist/echarts-leaflet.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style>
+        iframe{
+           margin-left: auto;
+           margin-right: auto;
+           display: block;
+           
+       }
+        .fa {
+            padding: 5px;
+            font-size: 15px;
+            width: 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-linkedin-square{
+            background: black;
+            color: white;
+        }
+        .fa-instagram{
+            background: brown;
+            color: white;
+        }
+        .fa-info-circle{
+            background: grey;
+            color: white;
+        }
+        .fa-heartbeat{
+            background: red;
+            color: white;
+        }
+        .box1,.box2,.box3,.box4{
+            width:25%;
+        }
+        i{
+            position: absolute;
+            width:auto;
+            padding: 0%;
+            border:1px gold;
+            border-radius: 100%;
+        }
+        .icon { 
+            padding: 0px; 
+            min-width: 10px; 
+            
+            border-width: 2px;
+            border-style: solid;
+            border-color: orange;
+            border-image: initial;
+            background-color: orange;
+            border-radius: 100% ;
+            padding: 4px;
+            margin: -10px;
+           
+            
+        } 
+        .box1{
+            background-image: linear-gradient(to right,lightblue,white);
+            width: 100px;
+            border: 1px solid green;
+            padding: 10px;
+            margin-right: 150px; 
+            border-radius: 20%;
+            
+        }
+        .box2{
+            background-image: linear-gradient(to right,yellow,white);
+            width: 100px;
+            border: 1px solid green;
+            padding: 10px;
+            margin-right: 150px;
+            border-radius: 20%;  
+        }
+        .box3{
+            background-image: linear-gradient(to right,lightgreen,white);
+            width: 100px;
+            border: 1px solid green;
+            padding: 10px;
+            margin-right: 120px;
+            border-radius: 20%;  
+        }
+        .box4{
+            background-image: linear-gradient(to right,pink,white);
+            width: 100px;
+            border: 1px solid green;
+            padding: 10px;
+            margin-right: 50px;
+            border-radius: 20%;  
+        }
+        body{
+            background-color:goldenrod;
+        }
+        h2,h3{
+            text-align:center;
+            padding:0%;
+        
+        h2{
+            margin-top: 0px;
+        }    
+        
+        h3{
+            margin:0%;
+        }
+        
+
+        /* Style all font awesome icons */
+        
+       
+       
+       button{
+           text-align: center;
+           text-decoration: maroon;
+           display: inline-block;
+           font-size: 16px;
+           margin: 4px 2px;
+           border-radius: 20px;
+       }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function () {
+            window.open('Overview.html','Overview','height= 480 px,width =640 px ,');
+        };
+    </script>
+    <iframe  scrolling="no" border="0" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="https://www.ashesh.com.np/linknepali-time.php?time_only=no&font_color=333333&aj_time=yes&font_size=14&line_brake=0&api=811167j585" width="334" height="22" ></iframe>
+    <!-- Add font awesome icons -->
+    <div class="ico" style="text-align:center">
+
+    <a href="https://www.facebook.com/shresthashok01" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/in/ashok-shrestha550/" target="_blank" class="fa fa-linkedin-square"></a>
+    <a href="https://www.instagram.com/ashok_sthaa/" target="_blank"  class="fa fa-instagram"></a>
+    <a href="https://twitter.com/shresthashok550" target="_blank" class="fa fa-twitter"></a>
+    <a href="http://myself.shresthashok550.com.np" target="_blank" title="Info About Developer" class="fa fa-info-circle"></a>
+    <a href="http://blooddatabase.shresthashok550.com.np" target="_blank" title="Blood Database" class="fa fa-heartbeat"></a>
+    </div>
+    <a style="float:left; margin-top:-40px;" href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
+    <a style="float:right; margin-top:-40px;"><img src="covidGif.gif"width="150"height="150"/></a>
+    <h2 id="Title">A Dynamic Spatial Visualization of COVID-19 Infections(DistrictWise)</h2>
+    <div class="box1" style="width: fit-content; float: left;">
+        <i class="fa fa-stethoscope icon"></i> 
+        <h3 style="color:blue">Total Cases: 56788</h3>
+    </div>
+    <div class="box2" style="width: fit-content; float: left;">
+        <i class="fa fa-ambulance icon"></i> 
+        <h3 style="color:blueviolet">Active: 15779</br> (27.78%)</h3>
+    </div>
+    <div class="box3"style="width: fit-content; float: left;">
+        <i class="fa fa-heart icon"></i> 
+        <h3 style="color:green">Recovered: 40638</br> (71.56%)</h3>
+    </div>
+    <div class="box4"style="width: fit-content; float: left;">
+        <i class="fa fa-heartbeat icon"></i> 
+        <h3 style="color:red">Deaths: 371</br> (0.65%)</h3>
+    </div>
+    <div class="box5" style="width: fit-content; float: left; margin-right:160px; margin-left:140px; margin-top:-15px">
+        <h3 style="color:blue">Yesterday: 55329</h3>
+    </div>
+    <div class="box6" style="width: fit-content; float: left;margin-right:160px; margin-top:-15px">
+        <h3 style="color:blueviolet">Yesterday: 15393</h3>
+    </div>
+    <div class="box7"style="width: fit-content; float: left;margin-right:140px; margin-top:-15px">
+        <h3 style="color:green">Yesterday: 39576</h3>
+    </div>
+    <div class="box8"style="width: fit-content; float: left; margin-top:-15px">
+        <h3 style="color:red">Yesterday: 360</h3>
+    </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<div class="final" style="width:100%; margin-top:-18px; text-align:center">
+    <button type="button" onclick="document.getElementById('Title').innerHTML = 'A Dynamic Spatial Visualization of COVID-19 Infections(Districtwise)';
+        document.getElementById('jsplot').src = 'index_D.html'"style="background-color:slateblue; color:white; font-size:20px; text-align:center ">Districts</button>
+    <button type="button" onclick="document.getElementById('Title').innerHTML = 'A Dynamic Spatial Visualization of COVID-19 Infections(ProvinceWise)';
+    document.getElementById('jsplot').src = 'index_P.html'"style="background-color:lightseagreen; color:white; font-size:20px">Province</button>
+<div class="final" style="width:100%">
+
+        <iframe id="jsplot" src="index_D.html" style="height:700px;width:100%">
+        </iframe>
+</div>
+<p style="text-align: center;">Copyright@ Ashok_Shrestha</p>
+<button type="button" onclick="document.getElementById('Title').outerHTML = 'Overview';
+        document.getElementById('jsplot').src = 'Overview.html'"style="background-color:black; color:white; font-size:20px; text-align:center ">Overview</button>
+
+</body>
+</html
+
