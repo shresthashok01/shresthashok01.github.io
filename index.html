@@ -151,11 +151,7 @@
     </style>
 </head>
 <body>
-    <script>
-        window.onload = function () {
-            window.open('Overview.html','Overview','height= 480 px,width =640 px ,');
-        };
-    </script>
+    
     <iframe  scrolling="no" border="0" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="https://www.ashesh.com.np/linknepali-time.php?time_only=no&font_color=333333&aj_time=yes&font_size=14&line_brake=0&api=811167j585" width="334" height="22" ></iframe>
     <!-- Add font awesome icons -->
     <div class="ico" style="text-align:center">
@@ -169,7 +165,7 @@
     </div>
     <a style="float:left; margin-top:-40px;" href="https://www.animatedimages.org/cat-nepal-flag-839.htm"><img src="https://www.animatedimages.org/data/media/839/animated-nepal-flag-image-0007.gif" border="0" alt="animated-nepal-flag-image-0007" /></a>
     <a style="float:right; margin-top:-40px;"><img src="covidGif.gif"width="150"height="150"/></a>
-    <h2 id="Title">A Dynamic Spatial Visualization of COVID-19 Infections(DistrictWise)</h2>
+    <h2 id="Title">A Dynamic Spatial Visualization of COVID-19 in Nepal</h2>
     <div class="box1" style="width: fit-content; float: left;">
         <i class="fa fa-stethoscope icon"></i> 
         <h3 style="color:blue">Total Cases: 56788</h3>
@@ -210,18 +206,18 @@
 </br>
 
 <div class="final" style="width:100%; margin-top:-18px; text-align:center">
+    <button type="button" onclick="document.getElementById('Title').innerHTML = 'Overview';
+        document.getElementById('jsplot').src = 'Overview.html'"style="background-color:black; color:white; font-size:20px; text-align:center ">Overview</button>
     <button type="button" onclick="document.getElementById('Title').innerHTML = 'A Dynamic Spatial Visualization of COVID-19 Infections(Districtwise)';
         document.getElementById('jsplot').src = 'index_D.html'"style="background-color:slateblue; color:white; font-size:20px; text-align:center ">Districts</button>
     <button type="button" onclick="document.getElementById('Title').innerHTML = 'A Dynamic Spatial Visualization of COVID-19 Infections(ProvinceWise)';
     document.getElementById('jsplot').src = 'index_P.html'"style="background-color:lightseagreen; color:white; font-size:20px">Province</button>
 <div class="final" style="width:100%">
 
-        <iframe id="jsplot" src="index_D.html" style="height:700px;width:100%">
+        <iframe id="jsplot" src="Overview.html" style="height:700px;width:100%">
         </iframe>
 </div>
-<p style="text-align: center;">Copyright@ Ashok_Shrestha</p>
-<button type="button" onclick="document.getElementById('Title').innerHTML = 'Overview';
-        document.getElementById('jsplot').src = 'Overview.html'"style="background-color:black; color:white; font-size:20px; text-align:center ">Overview</button>
+<p style="text-align: center;">Copyright © Ashok_Shrestha</p>
 
 </body>
 </html
